@@ -13,13 +13,13 @@ def calculate(*args):
 root = Tk()
 root.title("Feet to Meters Converter")
 # creating a content frame
-mainframe = ttk.Frame(root, padding="3 3 12 12")
+mainframe = ttk.Frame(root, padding="3 3 10 10") #changing 3 3 12 12 -> 3 3 10 10
 mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
-root.columnconfigure(0, weight=1)
-root.rowconfigure(0, weight=1)
+root.columnconfigure(0, weight=4) #weight=1 -> 4
+root.rowconfigure(0, weight=7)#weight=1 -> 7
 # Creating the Entry Widget
 feet = StringVar()
-feet_entry = ttk.Entry(mainframe, width=7, textvariable=feet)
+feet_entry = ttk.Entry(mainframe, width=20, textvariable=feet)#width=7 -> 20
 feet_entry.grid(column=2, row=1, sticky=(W, E))
 # Creating the Remaining Widgets
 meters = StringVar()
