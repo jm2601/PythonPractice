@@ -17,8 +17,10 @@ maze = [
 ]
 
 def main(stdscr):
+    curses.init_pair(1, curses.COLOR_BLUE, curses.COLOR_BLACK)
+    curses.init_pair(2, curses.COLOR_RED, curses.COLOR_BLACK)
     stdscr.clear()
-    stdscr.addstr(0,0, "hello world!")
+    stdscr.addstr(5,5, "hello world!")
     stdscr.refresh()
     stdscr.getch()
 
