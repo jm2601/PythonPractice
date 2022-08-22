@@ -14,3 +14,8 @@ my_node = Node(44)
 print(my_node.get_value())
 
 # Create your LinkedList class below:
+class LinkedList:
+  def __init__(self, value=None):
+    self.head_node = Node(value)
+  def get_head_node(self):
+    return self.head_node
