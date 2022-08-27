@@ -62,3 +62,10 @@ class LinkedList:
          current_node = None
        else:
          current_node = next_node
+
+# Create a few nodes and adding them to a new linked list
+# Print your linked list out by using your stringify_list() method
+# Remove your linked list’s head node
+# Print your list again — was your original head node removed?
+# So far you’ve built a method to remove the first occurrence of a given value. How do you think you would remove all nodes that have a specific value? 
+# Try building a method to do that!
