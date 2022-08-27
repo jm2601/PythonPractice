@@ -69,3 +69,16 @@ class LinkedList:
 # Print your list again — was your original head node removed?
 # So far you’ve built a method to remove the first occurrence of a given value. How do you think you would remove all nodes that have a specific value? 
 # Try building a method to do that!
+
+# def remove_node(self, node_to_remove):
+#     current_node = self.head_node
+#     if current_node == node_to_remove:
+#       self.head_node = current_node.next_node
+#     else:
+#       while current_node:
+#         next_node = current_node.next_node
+#         if next_node == node_to_remove:
+#           # --------> what line of code goes here?
+#           current_node = None
+#         else:
+#           current_node = next_node
